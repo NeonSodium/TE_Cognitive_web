@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TE Cog</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/custom.css">
     <script src="js/jquery-3.4.1.min.js"></script>
 </head>
 <body>
@@ -19,13 +21,13 @@
 
             <div class="columns is-centered is-bordered">
                 <div class="column has-text-centered">
-                    <h1 class="title">TE Cognitive</h1>
+                    <h1 class="title">Digit Span</h1>
                 </div>
             </div>
 
             <div class="columns is-centered">
                 <div class="column is-narrow">
-                    <a href="digit-span.php">
+                    <a href="digit-span.php?s=1">
                         <button class="button">Commencer</button>
                     </a>
                 </div>
