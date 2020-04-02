@@ -19,21 +19,20 @@
 
             <div class="columns is-centered is-bordered">
                 <div class="column has-text-centered">
-                    <h1 class="title">TE Cognitive</h1>
-                </div>
-            </div>
-
-            <div class="columns is-centered">
-                <div class="column is-narrow">
-                    <a href="digit-span.php">
-                        <button class="button">Commencer</button>
-                    </a>
+                    <h1 class="title" id="item">TE Cognitive</h1>
                 </div>
             </div>
         </div>
 
     </div>
 </section>
+
+<script>
+
+    item = Math.floor(Math.random() * 10);
+    $("#item").text(item);
+
+</script>
 
 </body>
 </html>
