@@ -1,0 +1,8 @@
+"rt","stimulus","key_press","trial_type","trial_index","time_elapsed","internal_node_id","test_part","correct_response"
+"1670.5450000008568","<h1>Digit Span</h1>","50","html-keyboard-response","0","1674","0.0-0.0","",""
+"null","5","null","html-keyboard-response","1","2675","0.0-1.0-0.0","item_3_1","5"
+"null","7","null","html-keyboard-response","2","3677","0.0-1.0-0.1","item_3_2","7"
+"null","2","null","html-keyboard-response","3","4679","0.0-1.0-0.2","item_3_3","2"
+"668.9499999629334","Réponse :","4","html-keyboard-response","4","5349","0.0-2.0-0.0","rep_3_1","5"
+"193.5199999716133","Réponse :","3","html-keyboard-response","5","5543","0.0-2.0-0.1","rep_3_2","7"
+"125.54999999701977","Réponse :","2","html-keyboard-response","6","5669","0.0-2.0-0.2","rep_3_3","2"
