@@ -12,9 +12,18 @@ function digitSpan(nb) {
     // Definir les items a presenter
     if (nb === 3) {
         var span_stimulus = [
-            {stimulus: items_3[0], data: {test_part: 'item_3_1', correct_response: items_3[0]}},
-            {stimulus: items_3[1], data: {test_part: 'item_3_2', correct_response: items_3[1]}},
-            {stimulus: items_3[2], data: {test_part: 'item_3_3', correct_response: items_3[2]}},
+            {
+                stimulus: "<p style='font-size: 4em'>" + items_3[0] + "</p>",
+                data: {test_part: 'item_3_1', correct_response: items_3[0]}
+            },
+            {
+                stimulus: "<p style='font-size: 4em'>" + items_3[1] + "</p>",
+                data: {test_part: 'item_3_2', correct_response: items_3[1]}
+            },
+            {
+                stimulus: "<p style='font-size: 4em'>" + items_3[2] + "</p>",
+                data: {test_part: 'item_3_3', correct_response: items_3[2]}
+            },
         ];
         var rep_stimulus = [
             {stimulus: "Réponse :", data: {test_part: 'rep_3_1', correct_response: items_3[0]}},
@@ -24,12 +33,32 @@ function digitSpan(nb) {
     }
     if (nb === 4) {
         var span_stimulus = [
-            {stimulus: items_4[0], data: {test_part: 'item_4_1', correct_response: items_4[0]}},
-            {stimulus: items_4[1], data: {test_part: 'item_4_2', correct_response: items_4[1]}},
-            {stimulus: items_4[2], data: {test_part: 'item_4_3', correct_response: items_4[2]}},
-            {stimulus: items_4[3], data: {test_part: 'item_4_4', correct_response: items_4[3]}},
+            {
+                stimulus: "<p style='font-size: 4em'>" + items_4[0] + "</p>",
+                data: {test_part: 'item_4_1', correct_response: items_4[0]}
+            },
+            {
+                stimulus: "<p style='font-size: 4em'>" + items_4[1] + "</p>",
+                data: {test_part: 'item_4_2', correct_response: items_4[1]}
+            },
+            {
+                stimulus: "<p style='font-size: 4em'>" + items_4[2] + "</p>",
+                data: {test_part: 'item_4_3', correct_response: items_4[2]}
+            },
+            {
+                stimulus: "<p style='font-size: 4em'>" + items_4[3] + "</p>",
+                data: {test_part: 'item_4_4', correct_response: items_4[3]}
+            },
+        ];
+        var rep_stimulus = [
+            {stimulus: "Réponse :", data: {test_part: 'rep_4_1', correct_response: items_4[0]}},
+            {stimulus: "Réponse :", data: {test_part: 'rep_4_2', correct_response: items_4[1]}},
+            {stimulus: "Réponse :", data: {test_part: 'rep_4_3', correct_response: items_4[2]}},
+            {stimulus: "Réponse :", data: {test_part: 'rep_4_4', correct_response: items_4[3]}},
         ];
     }
+
+
     // Definir le delai avec quels items
     var span = {
         type: "html-keyboard-response",
@@ -52,7 +81,7 @@ function digitSpan(nb) {
         stimulus: jsPsych.timelineVariable('stimulus'),
         choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
         data: jsPsych.timelineVariable('data'),
-        on_finish: function(data){
+        on_finish: function (data) {
             data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
         }
     };
@@ -63,7 +92,7 @@ function digitSpan(nb) {
         repetitions: 1,
     };
 
-    var digit = [span_procedure, rep_procedure]
+    var digit = [span_procedure, rep_procedure];
 
     return digit;
 }
