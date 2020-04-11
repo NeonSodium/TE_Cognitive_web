@@ -96,3 +96,4 @@ function digitSpan(nb) {
 
     return digit;
 }
+

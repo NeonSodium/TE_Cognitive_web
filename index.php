@@ -16,7 +16,9 @@
 
     <script src="js/fonctions.js"></script>
 </head>
-<body></body>
+<body>
+
+</body>
 
 <script>
 
@@ -39,8 +41,24 @@
     var ds3 = digitSpan(3);
     var ds4 = digitSpan(4);
 
+    var welc_ds3 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 3</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds3);
+
     timeline.push(ds3[0]);
     timeline.push(ds3[1]);
+
+    var welc_ds4 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 4</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds4);
 
     timeline.push(ds4[0]);
     timeline.push(ds4[1]);
@@ -49,8 +67,15 @@
         timeline: timeline,
         on_finish: function () {
             var data = jsPsych.data.get().filter({stimulus: 'Réponse :'}).csv();
-            console.log(data);
+            var dataJSON = jsPsych.data.get().filter({stimulus: 'Réponse :'}).json();
+            console.log(dataJSON);
             jsPsych.data.displayData('csv');
+            var form = $("<form action='write_data.php' method='post'>" +
+                "<input type='hidden' name='data' value='" + data + "'>" +
+                "<input type='hidden' name='dataJSON' value='" + dataJSON + "'>" +
+                "</form>");
+            $('body').append(form);
+            form.submit();
         }
     });
 </script>

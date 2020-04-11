@@ -1,11 +1,10 @@
 <?php
 include 'bd.php';
 
-function getSeries($bdd)
+function insert_raw($bdd, $data)
 {
-    $req = $bdd->prepare("SELECT * FROM series");
+    $req = $bdd->prepare("INSERT INTO data_raw (data) VALUES (:d)");
+    $req->bindParam(":d", $data);
     $req->execute();
-    $series = $req->fetchAll();
     $req->closeCursor();
-    return $series;
 }
