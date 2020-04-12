@@ -3,9 +3,9 @@
 function getBD()
 {
     $serveur = 'localhost';
-    $login = 'u485051925_cogueur';
-    $mot_de_passe = 'Josiana34';
-    $base_de_donnees = 'u485051925_tecog';
+    $login = 'root';
+    $mot_de_passe = '';
+    $base_de_donnees = 'te_cog';
 
     $pdo = new PDO('mysql:host=' . $serveur . ';dbname=' . $base_de_donnees, $login, $mot_de_passe);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
