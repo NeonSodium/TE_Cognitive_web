@@ -2,6 +2,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#item {
-    font-size: 5em;
+#jspsych-content {
+    font-family: Roboto, sans-serif;
+    color: #FFFFFF;
+}
+
+.jspsych-content-wrapper {
+    background-color: #363636;
 }

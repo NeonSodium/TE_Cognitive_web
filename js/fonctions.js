@@ -60,19 +60,24 @@ function digitSpan(nb) {
     if (nb === 3) {
         var span_stimulus = [
             {
-                stimulus: "<p style='font-size: 4em'>" + items_5[0] + "</p>", data: {test_part: 'trial_3_1', correct_response: items_5[0]}
+                stimulus: "<p style='font-size: 4em'>" + items_5[0] + "</p>",
+                data: {test_part: 'trial_3_1', correct_response: items_5[0]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_5[1] + "</p>", data: {test_part: 'trial_3_2', correct_response: items_5[1]}
+                stimulus: "<p style='font-size: 4em'>" + items_5[1] + "</p>",
+                data: {test_part: 'trial_3_2', correct_response: items_5[1]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_5[2] + "</p>", data: {test_part: 'trial_3_3', correct_response: items_5[2]}
+                stimulus: "<p style='font-size: 4em'>" + items_5[2] + "</p>",
+                data: {test_part: 'trial_3_3', correct_response: items_5[2]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_5[3] + "</p>", data: {test_part: 'trial_3_4', correct_response: items_5[3]}
+                stimulus: "<p style='font-size: 4em'>" + items_5[3] + "</p>",
+                data: {test_part: 'trial_3_4', correct_response: items_5[3]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_5[4] + "</p>", data: {test_part: 'trial_3_5', correct_response: items_5[4]}
+                stimulus: "<p style='font-size: 4em'>" + items_5[4] + "</p>",
+                data: {test_part: 'trial_3_5', correct_response: items_5[4]}
             },
         ];
         var rep_stimulus = [
@@ -86,22 +91,28 @@ function digitSpan(nb) {
     if (nb === 4) {
         var span_stimulus = [
             {
-                stimulus: "<p style='font-size: 4em'>" + items_6[0] + "</p>", data: {test_part: 'trial_4_1', correct_response: items_6[0]}
+                stimulus: "<p style='font-size: 4em'>" + items_6[0] + "</p>",
+                data: {test_part: 'trial_4_1', correct_response: items_6[0]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_6[1] + "</p>", data: {test_part: 'trial_4_2', correct_response: items_6[1]}
+                stimulus: "<p style='font-size: 4em'>" + items_6[1] + "</p>",
+                data: {test_part: 'trial_4_2', correct_response: items_6[1]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_6[2] + "</p>", data: {test_part: 'trial_4_3', correct_response: items_6[2]}
+                stimulus: "<p style='font-size: 4em'>" + items_6[2] + "</p>",
+                data: {test_part: 'trial_4_3', correct_response: items_6[2]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_6[3] + "</p>", data: {test_part: 'trial_4_4', correct_response: items_6[3]}
+                stimulus: "<p style='font-size: 4em'>" + items_6[3] + "</p>",
+                data: {test_part: 'trial_4_4', correct_response: items_6[3]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_6[4] + "</p>", data: {test_part: 'trial_4_5', correct_response: items_6[4]}
+                stimulus: "<p style='font-size: 4em'>" + items_6[4] + "</p>",
+                data: {test_part: 'trial_4_5', correct_response: items_6[4]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_6[5] + "</p>", data: {test_part: 'trial_4_6', correct_response: items_6[5]}
+                stimulus: "<p style='font-size: 4em'>" + items_6[5] + "</p>",
+                data: {test_part: 'trial_4_6', correct_response: items_6[5]}
             },
         ];
         var rep_stimulus = [
@@ -116,25 +127,32 @@ function digitSpan(nb) {
     if (nb === 5) {
         var span_stimulus = [
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[0] + "</p>", data: {test_part: 'trial_5_1', correct_response: items_7[0]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[0] + "</p>",
+                data: {test_part: 'trial_5_1', correct_response: items_7[0]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[1] + "</p>", data: {test_part: 'trial_5_2', correct_response: items_7[1]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[1] + "</p>",
+                data: {test_part: 'trial_5_2', correct_response: items_7[1]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[2] + "</p>", data: {test_part: 'trial_5_3', correct_response: items_7[2]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[2] + "</p>",
+                data: {test_part: 'trial_5_3', correct_response: items_7[2]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[3] + "</p>", data: {test_part: 'trial_5_4', correct_response: items_7[3]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[3] + "</p>",
+                data: {test_part: 'trial_5_4', correct_response: items_7[3]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[4] + "</p>", data: {test_part: 'trial_5_5', correct_response: items_7[4]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[4] + "</p>",
+                data: {test_part: 'trial_5_5', correct_response: items_7[4]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[5] + "</p>", data: {test_part: 'trial_5_6', correct_response: items_7[5]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[5] + "</p>",
+                data: {test_part: 'trial_5_6', correct_response: items_7[5]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[6] + "</p>", data: {test_part: 'trial_5_7', correct_response: items_7[6]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[6] + "</p>",
+                data: {test_part: 'trial_5_7', correct_response: items_7[6]}
             },
         ];
         var rep_stimulus = [
@@ -150,25 +168,32 @@ function digitSpan(nb) {
     if (nb === 6) {
         var span_stimulus = [
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[0] + "</p>", data: {test_part: 'trial_6_1', correct_response: items_7[0]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[0] + "</p>",
+                data: {test_part: 'trial_6_1', correct_response: items_7[0]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[1] + "</p>", data: {test_part: 'trial_6_2', correct_response: items_7[1]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[1] + "</p>",
+                data: {test_part: 'trial_6_2', correct_response: items_7[1]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[2] + "</p>", data: {test_part: 'trial_6_3', correct_response: items_7[2]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[2] + "</p>",
+                data: {test_part: 'trial_6_3', correct_response: items_7[2]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[3] + "</p>", data: {test_part: 'trial_6_4', correct_response: items_7[3]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[3] + "</p>",
+                data: {test_part: 'trial_6_4', correct_response: items_7[3]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[4] + "</p>", data: {test_part: 'trial_6_5', correct_response: items_7[4]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[4] + "</p>",
+                data: {test_part: 'trial_6_5', correct_response: items_7[4]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[5] + "</p>", data: {test_part: 'trial_6_6', correct_response: items_7[5]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[5] + "</p>",
+                data: {test_part: 'trial_6_6', correct_response: items_7[5]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[6] + "</p>", data: {test_part: 'trial_6_7', correct_response: items_7[6]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[6] + "</p>",
+                data: {test_part: 'trial_6_7', correct_response: items_7[6]}
             },
         ];
         var rep_stimulus = [
@@ -184,22 +209,28 @@ function digitSpan(nb) {
     if (nb === 7) {
         var span_stimulus = [
             {
-                stimulus: "<p style='font-size: 4em'>" + items_6[0] + "</p>", data: {test_part: 'trial_7_1', correct_response: items_6[0]}
+                stimulus: "<p style='font-size: 4em'>" + items_6[0] + "</p>",
+                data: {test_part: 'trial_7_1', correct_response: items_6[0]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_6[1] + "</p>", data: {test_part: 'trial_7_2', correct_response: items_6[1]}
+                stimulus: "<p style='font-size: 4em'>" + items_6[1] + "</p>",
+                data: {test_part: 'trial_7_2', correct_response: items_6[1]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_6[2] + "</p>", data: {test_part: 'trial_7_3', correct_response: items_6[2]}
+                stimulus: "<p style='font-size: 4em'>" + items_6[2] + "</p>",
+                data: {test_part: 'trial_7_3', correct_response: items_6[2]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_6[3] + "</p>", data: {test_part: 'trial_7_4', correct_response: items_6[3]}
+                stimulus: "<p style='font-size: 4em'>" + items_6[3] + "</p>",
+                data: {test_part: 'trial_7_4', correct_response: items_6[3]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_6[4] + "</p>", data: {test_part: 'trial_7_5', correct_response: items_6[4]}
+                stimulus: "<p style='font-size: 4em'>" + items_6[4] + "</p>",
+                data: {test_part: 'trial_7_5', correct_response: items_6[4]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_6[5] + "</p>", data: {test_part: 'trial_7_6', correct_response: items_6[5]}
+                stimulus: "<p style='font-size: 4em'>" + items_6[5] + "</p>",
+                data: {test_part: 'trial_7_6', correct_response: items_6[5]}
             },
         ];
         var rep_stimulus = [
@@ -214,25 +245,32 @@ function digitSpan(nb) {
     if (nb === 8) {
         var span_stimulus = [
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[0] + "</p>", data: {test_part: 'trial_8_1', correct_response: items_7[0]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[0] + "</p>",
+                data: {test_part: 'trial_8_1', correct_response: items_7[0]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[1] + "</p>", data: {test_part: 'trial_8_2', correct_response: items_7[1]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[1] + "</p>",
+                data: {test_part: 'trial_8_2', correct_response: items_7[1]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[2] + "</p>", data: {test_part: 'trial_8_3', correct_response: items_7[2]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[2] + "</p>",
+                data: {test_part: 'trial_8_3', correct_response: items_7[2]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[3] + "</p>", data: {test_part: 'trial_8_4', correct_response: items_7[3]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[3] + "</p>",
+                data: {test_part: 'trial_8_4', correct_response: items_7[3]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[4] + "</p>", data: {test_part: 'trial_8_5', correct_response: items_7[4]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[4] + "</p>",
+                data: {test_part: 'trial_8_5', correct_response: items_7[4]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[5] + "</p>", data: {test_part: 'trial_8_6', correct_response: items_7[5]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[5] + "</p>",
+                data: {test_part: 'trial_8_6', correct_response: items_7[5]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[6] + "</p>", data: {test_part: 'trial_8_7', correct_response: items_7[6]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[6] + "</p>",
+                data: {test_part: 'trial_8_7', correct_response: items_7[6]}
             },
         ];
         var rep_stimulus = [
@@ -248,25 +286,32 @@ function digitSpan(nb) {
     if (nb === 9) {
         var span_stimulus = [
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[0] + "</p>", data: {test_part: 'trial_9_1', correct_response: items_7[0]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[0] + "</p>",
+                data: {test_part: 'trial_9_1', correct_response: items_7[0]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[1] + "</p>", data: {test_part: 'trial_9_2', correct_response: items_7[1]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[1] + "</p>",
+                data: {test_part: 'trial_9_2', correct_response: items_7[1]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[2] + "</p>", data: {test_part: 'trial_9_3', correct_response: items_7[2]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[2] + "</p>",
+                data: {test_part: 'trial_9_3', correct_response: items_7[2]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[3] + "</p>", data: {test_part: 'trial_9_4', correct_response: items_7[3]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[3] + "</p>",
+                data: {test_part: 'trial_9_4', correct_response: items_7[3]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[4] + "</p>", data: {test_part: 'trial_9_5', correct_response: items_7[4]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[4] + "</p>",
+                data: {test_part: 'trial_9_5', correct_response: items_7[4]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[5] + "</p>", data: {test_part: 'trial_9_6', correct_response: items_7[5]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[5] + "</p>",
+                data: {test_part: 'trial_9_6', correct_response: items_7[5]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_7[6] + "</p>", data: {test_part: 'trial_9_7', correct_response: items_7[6]}
+                stimulus: "<p style='font-size: 4em'>" + items_7[6] + "</p>",
+                data: {test_part: 'trial_9_7', correct_response: items_7[6]}
             },
         ];
         var rep_stimulus = [
@@ -282,28 +327,36 @@ function digitSpan(nb) {
     if (nb === 10) {
         var span_stimulus = [
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[0] + "</p>", data: {test_part: 'trial_10_1', correct_response: items_8[0]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[0] + "</p>",
+                data: {test_part: 'trial_10_1', correct_response: items_8[0]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[1] + "</p>", data: {test_part: 'trial_10_2', correct_response: items_8[1]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[1] + "</p>",
+                data: {test_part: 'trial_10_2', correct_response: items_8[1]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[2] + "</p>", data: {test_part: 'trial_10_3', correct_response: items_8[2]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[2] + "</p>",
+                data: {test_part: 'trial_10_3', correct_response: items_8[2]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[3] + "</p>", data: {test_part: 'trial_10_4', correct_response: items_8[3]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[3] + "</p>",
+                data: {test_part: 'trial_10_4', correct_response: items_8[3]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[4] + "</p>", data: {test_part: 'trial_10_5', correct_response: items_8[4]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[4] + "</p>",
+                data: {test_part: 'trial_10_5', correct_response: items_8[4]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[5] + "</p>", data: {test_part: 'trial_10_6', correct_response: items_8[5]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[5] + "</p>",
+                data: {test_part: 'trial_10_6', correct_response: items_8[5]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[6] + "</p>", data: {test_part: 'trial_10_7', correct_response: items_8[6]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[6] + "</p>",
+                data: {test_part: 'trial_10_7', correct_response: items_8[6]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[7] + "</p>", data: {test_part: 'trial_10_8', correct_response: items_8[7]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[7] + "</p>",
+                data: {test_part: 'trial_10_8', correct_response: items_8[7]}
             },
         ];
         var rep_stimulus = [
@@ -320,28 +373,36 @@ function digitSpan(nb) {
     if (nb === 11) {
         var span_stimulus = [
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[0] + "</p>", data: {test_part: 'trial_11_1', correct_response: items_8[0]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[0] + "</p>",
+                data: {test_part: 'trial_11_1', correct_response: items_8[0]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[1] + "</p>", data: {test_part: 'trial_11_2', correct_response: items_8[1]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[1] + "</p>",
+                data: {test_part: 'trial_11_2', correct_response: items_8[1]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[2] + "</p>", data: {test_part: 'trial_11_3', correct_response: items_8[2]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[2] + "</p>",
+                data: {test_part: 'trial_11_3', correct_response: items_8[2]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[3] + "</p>", data: {test_part: 'trial_11_4', correct_response: items_8[3]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[3] + "</p>",
+                data: {test_part: 'trial_11_4', correct_response: items_8[3]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[4] + "</p>", data: {test_part: 'trial_11_5', correct_response: items_8[4]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[4] + "</p>",
+                data: {test_part: 'trial_11_5', correct_response: items_8[4]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[5] + "</p>", data: {test_part: 'trial_11_6', correct_response: items_8[5]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[5] + "</p>",
+                data: {test_part: 'trial_11_6', correct_response: items_8[5]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[6] + "</p>", data: {test_part: 'trial_11_7', correct_response: items_8[6]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[6] + "</p>",
+                data: {test_part: 'trial_11_7', correct_response: items_8[6]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[7] + "</p>", data: {test_part: 'trial_11_8', correct_response: items_8[7]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[7] + "</p>",
+                data: {test_part: 'trial_11_8', correct_response: items_8[7]}
             },
         ];
         var rep_stimulus = [
@@ -358,31 +419,40 @@ function digitSpan(nb) {
     if (nb === 12) {
         var span_stimulus = [
             {
-                stimulus: "<p style='font-size: 4em'>" + items_9[0] + "</p>", data: {test_part: 'trial_12_1', correct_response: items_9[0]}
+                stimulus: "<p style='font-size: 4em'>" + items_9[0] + "</p>",
+                data: {test_part: 'trial_12_1', correct_response: items_9[0]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_9[1] + "</p>", data: {test_part: 'trial_12_2', correct_response: items_9[1]}
+                stimulus: "<p style='font-size: 4em'>" + items_9[1] + "</p>",
+                data: {test_part: 'trial_12_2', correct_response: items_9[1]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_9[2] + "</p>", data: {test_part: 'trial_12_3', correct_response: items_9[2]}
+                stimulus: "<p style='font-size: 4em'>" + items_9[2] + "</p>",
+                data: {test_part: 'trial_12_3', correct_response: items_9[2]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_9[3] + "</p>", data: {test_part: 'trial_12_4', correct_response: items_9[3]}
+                stimulus: "<p style='font-size: 4em'>" + items_9[3] + "</p>",
+                data: {test_part: 'trial_12_4', correct_response: items_9[3]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_9[4] + "</p>", data: {test_part: 'trial_12_5', correct_response: items_9[4]}
+                stimulus: "<p style='font-size: 4em'>" + items_9[4] + "</p>",
+                data: {test_part: 'trial_12_5', correct_response: items_9[4]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_9[5] + "</p>", data: {test_part: 'trial_12_6', correct_response: items_9[5]}
+                stimulus: "<p style='font-size: 4em'>" + items_9[5] + "</p>",
+                data: {test_part: 'trial_12_6', correct_response: items_9[5]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_9[6] + "</p>", data: {test_part: 'trial_12_7', correct_response: items_9[6]}
+                stimulus: "<p style='font-size: 4em'>" + items_9[6] + "</p>",
+                data: {test_part: 'trial_12_7', correct_response: items_9[6]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_9[7] + "</p>", data: {test_part: 'trial_12_8', correct_response: items_9[7]}
+                stimulus: "<p style='font-size: 4em'>" + items_9[7] + "</p>",
+                data: {test_part: 'trial_12_8', correct_response: items_9[7]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_9[8] + "</p>", data: {test_part: 'trial_12_9', correct_response: items_9[8]}
+                stimulus: "<p style='font-size: 4em'>" + items_9[8] + "</p>",
+                data: {test_part: 'trial_12_9', correct_response: items_9[8]}
             },
         ];
         var rep_stimulus = [
@@ -400,31 +470,40 @@ function digitSpan(nb) {
     if (nb === 13) {
         var span_stimulus = [
             {
-                stimulus: "<p style='font-size: 4em'>" + items_9[0] + "</p>", data: {test_part: 'trial_13_1', correct_response: items_9[0]}
+                stimulus: "<p style='font-size: 4em'>" + items_9[0] + "</p>",
+                data: {test_part: 'trial_13_1', correct_response: items_9[0]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_9[1] + "</p>", data: {test_part: 'trial_13_2', correct_response: items_9[1]}
+                stimulus: "<p style='font-size: 4em'>" + items_9[1] + "</p>",
+                data: {test_part: 'trial_13_2', correct_response: items_9[1]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_9[2] + "</p>", data: {test_part: 'trial_13_3', correct_response: items_9[2]}
+                stimulus: "<p style='font-size: 4em'>" + items_9[2] + "</p>",
+                data: {test_part: 'trial_13_3', correct_response: items_9[2]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_9[3] + "</p>", data: {test_part: 'trial_13_4', correct_response: items_9[3]}
+                stimulus: "<p style='font-size: 4em'>" + items_9[3] + "</p>",
+                data: {test_part: 'trial_13_4', correct_response: items_9[3]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_9[4] + "</p>", data: {test_part: 'trial_13_5', correct_response: items_9[4]}
+                stimulus: "<p style='font-size: 4em'>" + items_9[4] + "</p>",
+                data: {test_part: 'trial_13_5', correct_response: items_9[4]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_9[5] + "</p>", data: {test_part: 'trial_13_6', correct_response: items_9[5]}
+                stimulus: "<p style='font-size: 4em'>" + items_9[5] + "</p>",
+                data: {test_part: 'trial_13_6', correct_response: items_9[5]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_9[6] + "</p>", data: {test_part: 'trial_13_7', correct_response: items_9[6]}
+                stimulus: "<p style='font-size: 4em'>" + items_9[6] + "</p>",
+                data: {test_part: 'trial_13_7', correct_response: items_9[6]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_9[7] + "</p>", data: {test_part: 'trial_13_8', correct_response: items_9[7]}
+                stimulus: "<p style='font-size: 4em'>" + items_9[7] + "</p>",
+                data: {test_part: 'trial_13_8', correct_response: items_9[7]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_9[8] + "</p>", data: {test_part: 'trial_13_9', correct_response: items_9[8]}
+                stimulus: "<p style='font-size: 4em'>" + items_9[8] + "</p>",
+                data: {test_part: 'trial_13_9', correct_response: items_9[8]}
             },
         ];
         var rep_stimulus = [
@@ -442,28 +521,36 @@ function digitSpan(nb) {
     if (nb === 14) {
         var span_stimulus = [
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[0] + "</p>", data: {test_part: 'trial_14_1', correct_response: items_8[0]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[0] + "</p>",
+                data: {test_part: 'trial_14_1', correct_response: items_8[0]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[1] + "</p>", data: {test_part: 'trial_14_2', correct_response: items_8[1]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[1] + "</p>",
+                data: {test_part: 'trial_14_2', correct_response: items_8[1]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[2] + "</p>", data: {test_part: 'trial_14_3', correct_response: items_8[2]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[2] + "</p>",
+                data: {test_part: 'trial_14_3', correct_response: items_8[2]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[3] + "</p>", data: {test_part: 'trial_14_4', correct_response: items_8[3]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[3] + "</p>",
+                data: {test_part: 'trial_14_4', correct_response: items_8[3]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[4] + "</p>", data: {test_part: 'trial_14_5', correct_response: items_8[4]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[4] + "</p>",
+                data: {test_part: 'trial_14_5', correct_response: items_8[4]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[5] + "</p>", data: {test_part: 'trial_14_6', correct_response: items_8[5]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[5] + "</p>",
+                data: {test_part: 'trial_14_6', correct_response: items_8[5]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[6] + "</p>", data: {test_part: 'trial_14_7', correct_response: items_8[6]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[6] + "</p>",
+                data: {test_part: 'trial_14_7', correct_response: items_8[6]}
             },
             {
-                stimulus: "<p style='font-size: 4em'>" + items_8[7] + "</p>", data: {test_part: 'trial_14_8', correct_response: items_8[7]}
+                stimulus: "<p style='font-size: 4em'>" + items_8[7] + "</p>",
+                data: {test_part: 'trial_14_8', correct_response: items_8[7]}
             },
         ];
         var rep_stimulus = [
@@ -504,7 +591,10 @@ function digitSpan(nb) {
         data: jsPsych.timelineVariable('data'),
         on_finish: function (data) {
             data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
-            data.correct = data.key_press === data.correct_response;
+            data.correct = data.key_press == data.correct_response;
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
         }
     };
     var rep_procedure = {
