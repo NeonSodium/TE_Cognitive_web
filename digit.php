@@ -14,6 +14,7 @@
     <script src="framework/jspsych.js"></script>
     <script src="framework/plugins/jspsych-html-keyboard-response.js"></script>
     <script src="framework/plugins/jspsych-animation.js"></script>
+    <script src="framework/plugins/jspsych-instructions.js"></script>
 
     <script src="js/fonctions.js"></script>
 </head>
@@ -31,6 +32,22 @@
         prompt: "Appuyez sur une touche pour commencer.",
     };
     timeline.push(welcome);
+
+    var instruction = {
+        type: 'instructions',
+        pages: [
+            "<p>Une série de chiffres va s'afficher au centre de l'écran, " +
+            "à la fin de la série il vous sera demandé de restituer la série de chiffres dans l'ordre.</p>",
+
+            "<p>Lorsque \"Réponse :\" s'affiche vous devez taper les chiffres en utilisant votre clavier. </p>" +
+            "<p>Seule la ligne de chiffres est compatible (vous n'avez pas besoin d'utiliser la touche \"maj\").</p>" +
+            "<p><img src='assets/clavier.png' alt='' id='clavier'></p>",
+
+            'This is the final page.',
+        ],
+        show_clickable_nav: true
+    };
+    timeline.push(instruction);
 
     // --GENERATION SERIES DIGIT SPAN--
     var ds1 = digitSpan(1);

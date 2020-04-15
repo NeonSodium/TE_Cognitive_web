@@ -10,3 +10,7 @@ body {
 .jspsych-content-wrapper {
     background-color: #363636;
 }
+
+#clavier {
+    width: 60%;
+}
