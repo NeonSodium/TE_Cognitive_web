@@ -95,6 +95,7 @@
     timeline.push(welc_ds3);
     timeline.push(ds3[0]);
     timeline.push(ds3[1]);
+/*
 
     var welc_ds4 = {
         type: "html-keyboard-response",
@@ -205,6 +206,7 @@
     timeline.push(welc_ds14);
     timeline.push(ds14[0]);
     timeline.push(ds14[1]);
+*/
 
 
     // LA FIN
