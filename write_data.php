@@ -27,7 +27,7 @@ for ($i = 0; $i < count($data); $i++) {
 
     $part = $data[$i]->{'test_part'};
     $partexp = (explode("_", $part));
-    print_r($partexp);
+    #print_r($partexp);
 
     insertDigit($bdd, $sujet, $data[$i]->{'test_part'} , intval($partexp[1]), intval($partexp[2]), $data[$i]->{'correct'}, $data[$i]->{'key_press'}, $data[$i]->{'correct_response'}, $data[$i]->{'rt'}, $data[$i]->{'time_elapsed'});
 
