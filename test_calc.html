@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test calcul</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+<p id="calcul">
+    <span id="a">a</span> × <span id="b">b</span> <span id="op">-</span> <span id="c">c</span>
+</p>
+<p>
+    Résultat : <span id="result">0</span>
+</p>
+
+<script>
+    function rnd(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    var unit = rnd(1, 9);
+    var a = rnd(1, 9);
+    var b = rnd(1, 9);
+    var ab = a * b;
+    var c = ab - unit;
+    console.log(a, "*", b, '-', c, "=", ab - c);
+
+    $('#a').text(a);
+    $('#b').text(b);
+    $('#c').text(Math.abs(c));
+    $('#result').text(ab - c);
+    if (c < 0) {
+        $('#op').text('+')
+    }
+    console.log($('#calcul').text())
+
+</script>
+
+</body>
+</html>

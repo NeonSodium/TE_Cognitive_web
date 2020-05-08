@@ -610,3 +610,22 @@ function digitSpan(nb, serie) {
     return digit;
 }
 
+function rnd(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function calcul() {
+    var unit = rnd(1, 9);
+    var a = rnd(1, 9);
+    var b = rnd(1, 9);
+    var ab = a * b;
+    var c = ab - unit;
+    var result = ab - c;
+    console.log(a, "*", b, '-', c, "=", result);
+    if (c < 0) {
+        var calc = a + " × " + b + ' + ' + Math.abs(c);
+    } else {
+        var calc = a + " × " + b + ' - ' + Math.abs(c);
+    }
+    return [calc, a, b, c, result];
+}
