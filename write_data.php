@@ -21,6 +21,8 @@ insertRaw($bdd, $_POST['dataJSON']);
 $json = $_POST['dataJSON'];
 $data = json_decode($json);
 
+#print_r($data);
+
 for ($i = 0; $i < count($data); $i++) {
     #echo($data[$i]->{'test_part'});
     #echo "<br>";
@@ -29,7 +31,7 @@ for ($i = 0; $i < count($data); $i++) {
     $partexp = (explode("_", $part));
     #print_r($partexp);
 
-    insertDigit($bdd, $sujet, $data[$i]->{'test_part'} , intval($partexp[1]), intval($partexp[2]), $data[$i]->{'correct'}, $data[$i]->{'key_press'}, $data[$i]->{'correct_response'}, $data[$i]->{'rt'}, $data[$i]->{'time_elapsed'});
+    insertDigit($bdd, $sujet, intval($partexp[1]), $data[$i]->{'test_part'}, intval($partexp[2]), intval($partexp[3]), $data[$i]->{'correct'}, $data[$i]->{'key_press'}, $data[$i]->{'correct_response'}, $data[$i]->{'rt'}, $data[$i]->{'time_elapsed'});
 
 }
 ?>
@@ -39,14 +41,7 @@ for ($i = 0; $i < count($data); $i++) {
         <div class="container has-text-centered">
             <h1 class="title">Merci !</h1>
 
-            <p>
-                <?php
-                #print_r($data);
-
-
-
-                ?>
-            </p>
+            <h2 class="subtitle">Votre identifiant : <?php echo $sujet; ?></h2>
 
         </div>
     </div>

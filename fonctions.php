@@ -10,10 +10,11 @@ function insertRaw($bdd, $data)
     $req->closeCursor();
 }
 
-function insertDigit($bdd, $id, $test_part, $trial, $item, $correct, $key_press, $correct_response, $rt, $time_elapsed)
+function insertDigit($bdd, $id, $serie, $test_part, $trial, $item, $correct, $key_press, $correct_response, $rt, $time_elapsed)
 {
-    $req = $bdd->prepare("INSERT INTO digit (id_sujet, test_part, trial, item, correct, key_press, correct_response, rt, time_elapsed) VALUES (:id, :test_part, :trial, :item, :correct, :key_press, :correct_response, :rt, :time_elapsed)");
+    $req = $bdd->prepare("INSERT INTO digit (id_sujet, serie, test_part, trial, item, correct, key_press, correct_response, rt, time_elapsed) VALUES (:id, :serie, :test_part, :trial, :item, :correct, :key_press, :correct_response, :rt, :time_elapsed)");
     $req->bindParam(":id", $id);
+    $req->bindParam(":serie", $serie);
     $req->bindParam(":test_part", $test_part);
     $req->bindParam(":trial", $trial);
     $req->bindParam(":item", $item);
