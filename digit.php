@@ -25,6 +25,7 @@
 <script>
 
     var t_calc = 5000;
+    var r_calc_1 = [];
 
     // Message de bienvenue
     var timeline = [];
@@ -223,105 +224,225 @@
     };
     timeline.push(welc_c1);
 
-    var c1 = calcul();
-    var calc1 = {
+    var c_1_1 = calcul();
+    var calc_1_1 = {
         type: 'html-keyboard-response',
-        stimulus: '<h1>' + c1[0] + '</h1>',
+        stimulus: '<h1>' + c_1_1[0] + '</h1>',
         choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
         prompt: "<p>Réponse :</p>",
         trial_duration: t_calc,
         on_finish: function (data) {
             data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
-            data.correct_response = c1[4];
+            data.correct_response = c_1_1[4];
             data.correct = data.key_press == data.correct_response;
-            data.test_part = "calc_1";
+            data.test_part = "calc_1_1";
             console.log(data.test_part);
             console.log(data.correct);
             console.log(data.key_press);
             console.log(data.correct_response);
+            r_calc_1.push(data.correct);
+            console.log(r_calc_1);
         }
     };
-    timeline.push(calc1);
+    timeline.push(calc_1_1);
 
-    var c2 = calcul();
-    var calc2 = {
+    var c_1_2 = calcul();
+    var calc_1_2 = {
         type: 'html-keyboard-response',
-        stimulus: '<h1>' + c2[0] + '</h1>',
+        stimulus: '<h1>' + c_1_2[0] + '</h1>',
         choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
         prompt: "<p>Réponse :</p>",
         trial_duration: t_calc,
         on_finish: function (data) {
             data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
-            data.correct_response = c2[4];
+            data.correct_response = c_1_2[4];
             data.correct = data.key_press == data.correct_response;
-            data.test_part = "calc_2";
+            data.test_part = "calc_1_2";
             console.log(data.test_part);
             console.log(data.correct);
             console.log(data.key_press);
             console.log(data.correct_response);
+            r_calc_1.push(data.correct);
+            console.log(r_calc_1);
         }
     };
-    timeline.push(calc2);
+    timeline.push(calc_1_2);
 
-    var c3 = calcul();
-    var calc3 = {
+    var c_1_3 = calcul();
+    var calc_1_3 = {
         type: 'html-keyboard-response',
-        stimulus: '<h1>' + c3[0] + '</h1>',
+        stimulus: '<h1>' + c_1_3[0] + '</h1>',
         choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
         prompt: "<p>Réponse :</p>",
         trial_duration: t_calc,
         on_finish: function (data) {
             data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
-            data.correct_response = c3[4];
+            data.correct_response = c_1_3[4];
             data.correct = data.key_press == data.correct_response;
-            data.test_part = "calc_3";
+            data.test_part = "calc_1_3";
             console.log(data.test_part);
             console.log(data.correct);
             console.log(data.key_press);
             console.log(data.correct_response);
+            r_calc_1.push(data.correct);
+            console.log(r_calc_1);
         }
     };
-    timeline.push(calc3);
+    timeline.push(calc_1_3);
 
-    var c4 = calcul();
-    var calc4 = {
+    var c_1_4 = calcul();
+    var calc_1_4 = {
         type: 'html-keyboard-response',
-        stimulus: '<h1>' + c4[0] + '</h1>',
+        stimulus: '<h1>' + c_1_4[0] + '</h1>',
         choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
         prompt: "<p>Réponse :</p>",
         trial_duration: t_calc,
         on_finish: function (data) {
             data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
-            data.correct_response = c4[4];
+            data.correct_response = c_1_4[4];
             data.correct = data.key_press == data.correct_response;
-            data.test_part = "calc_4";
+            data.test_part = "calc_1_4";
             console.log(data.test_part);
             console.log(data.correct);
             console.log(data.key_press);
             console.log(data.correct_response);
+            r_calc_1.push(data.correct);
+            console.log(r_calc_1);
         }
     };
-    timeline.push(calc4);
+    timeline.push(calc_1_4);
 
-    var c5 = calcul();
-    var calc5 = {
+    var c_1_5 = calcul();
+    var calc_1_5 = {
         type: 'html-keyboard-response',
-        stimulus: '<h1>' + c5[0] + '</h1>',
+        stimulus: '<h1>' + c_1_5[0] + '</h1>',
         choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
         prompt: "<p>Réponse :</p>",
         trial_duration: t_calc,
         on_finish: function (data) {
             data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
-            data.correct_response = c5[4];
+            data.correct_response = c_1_5[4];
             data.correct = data.key_press == data.correct_response;
-            data.test_part = "calc_4";
+            data.test_part = "calc_1_5";
             console.log(data.test_part);
             console.log(data.correct);
             console.log(data.key_press);
             console.log(data.correct_response);
+            r_calc_1.push(data.correct);
+            console.log(r_calc_1);
         }
     };
-    timeline.push(calc5);
+    timeline.push(calc_1_5);
+
+    var c_1_6 = calcul();
+    var calc_1_6 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_1_6[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_1_6[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_1_6";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_1.push(data.correct);
+            console.log(r_calc_1);
+        }
+    };
+    timeline.push(calc_1_6);
+
+    var c_1_7 = calcul();
+    var calc_1_7 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_1_7[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_1_7[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_1_7";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_1.push(data.correct);
+            console.log(r_calc_1);
+        }
+    };
+    timeline.push(calc_1_7);
+
+    var c_1_8 = calcul();
+    var calc_1_8 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_1_8[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_1_8[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_1_8";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_1.push(data.correct);
+            console.log(r_calc_1);
+        }
+    };
+    timeline.push(calc_1_8);
+
+    var c_1_9 = calcul();
+    var calc_1_9 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_1_9[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_1_9[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_1_9";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_1.push(data.correct);
+            console.log(r_calc_1);
+        }
+    };
+    timeline.push(calc_1_9);
+
+    var c_1_10 = calcul();
+    var calc_1_10 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_1_10[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_1_10[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_1_10";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_1.push(data.correct);
+            console.log(r_calc_1);
+        }
+    };
+    timeline.push(calc_1_10);
 
     // --GENERATION SERIES 2 DIGIT SPAN--
     var ds1 = digitSpan(1, '2');
@@ -481,6 +602,8 @@
             timeline.push(ds14[1]);
         */
 
+
+
     // LA FIN
     jsPsych.init({
         timeline: timeline,
@@ -492,6 +615,7 @@
             var form = $("<form action='write_data.php' method='post'>" +
                 "<input type='hidden' name='data' value='" + data + "'>" +
                 "<input type='hidden' name='dataJSON' value='" + dataJSON + "'>" +
+                "<input type='hidden' name='dataCalc' value='" + toString(r_calc_1) + "'>" +
                 "</form>");
             $('body').append(form);
             form.submit();

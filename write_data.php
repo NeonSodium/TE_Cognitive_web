@@ -21,7 +21,10 @@ insertRaw($bdd, $_POST['dataJSON']);
 $json = $_POST['dataJSON'];
 $data = json_decode($json);
 
-print_r($data);
+$calc = $_POST['dataCalc'];
+
+#print_r($data);
+print_r($calc);
 
 for ($i = 0; $i < count($data); $i++) {
     #echo($data[$i]->{'test_part'});
