@@ -26,6 +26,8 @@
 
     var t_calc = 5000;
     var r_calc_1 = [];
+    var r_calc_2 = [];
+    var r_calc_3 = [];
 
     // Message de bienvenue
     var timeline = [];
@@ -79,142 +81,141 @@
     timeline.push(welc_ds1);
     timeline.push(ds1[0]);
     timeline.push(ds1[1]);
-    /*
-        var welc_ds2 = {
-            type: "html-keyboard-response",
-            stimulus: "<h1>Série de 4</h1>",
-            trial_duration: 1500,
-            choices: jsPsych.NO_KEYS,
-        };
-        timeline.push(welc_ds2);
-        timeline.push(ds2[0]);
-        timeline.push(ds2[1]);
+
+    var welc_ds2 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 4</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds2);
+    timeline.push(ds2[0]);
+    timeline.push(ds2[1]);
 
 
-        var welc_ds3 = {
-            type: "html-keyboard-response",
-            stimulus: "<h1>Série de 5</h1>",
-            trial_duration: 1500,
-            choices: jsPsych.NO_KEYS,
-        };
-        timeline.push(welc_ds3);
-        timeline.push(ds3[0]);
-        timeline.push(ds3[1]);
+    var welc_ds3 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 5</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds3);
+    timeline.push(ds3[0]);
+    timeline.push(ds3[1]);
 
 
-        var welc_ds4 = {
-            type: "html-keyboard-response",
-            stimulus: "<h1>Série de 6</h1>",
-            trial_duration: 1500,
-            choices: jsPsych.NO_KEYS,
-        };
-        timeline.push(welc_ds4);
-        timeline.push(ds4[0]);
-        timeline.push(ds4[1]);
+    var welc_ds4 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 6</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds4);
+    timeline.push(ds4[0]);
+    timeline.push(ds4[1]);
 
-        var welc_ds5 = {
-            type: "html-keyboard-response",
-            stimulus: "<h1>Série de 7</h1>",
-            trial_duration: 1500,
-            choices: jsPsych.NO_KEYS,
-        };
-        timeline.push(welc_ds5);
-        timeline.push(ds5[0]);
-        timeline.push(ds5[1]);
+    var welc_ds5 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 7</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds5);
+    timeline.push(ds5[0]);
+    timeline.push(ds5[1]);
 
-        var welc_ds6 = {
-            type: "html-keyboard-response",
-            stimulus: "<h1>Série de 7</h1>",
-            trial_duration: 1500,
-            choices: jsPsych.NO_KEYS,
-        };
-        timeline.push(welc_ds6);
-        timeline.push(ds6[0]);
-        timeline.push(ds6[1]);
+    var welc_ds6 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 7</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds6);
+    timeline.push(ds6[0]);
+    timeline.push(ds6[1]);
 
-        var welc_ds7 = {
-            type: "html-keyboard-response",
-            stimulus: "<h1>Série de 6</h1>",
-            trial_duration: 1500,
-            choices: jsPsych.NO_KEYS,
-        };
-        timeline.push(welc_ds7);
-        timeline.push(ds7[0]);
-        timeline.push(ds7[1]);
+    var welc_ds7 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 6</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds7);
+    timeline.push(ds7[0]);
+    timeline.push(ds7[1]);
 
-        var welc_ds8 = {
-            type: "html-keyboard-response",
-            stimulus: "<h1>Série de 7</h1>",
-            trial_duration: 1500,
-            choices: jsPsych.NO_KEYS,
-        };
-        timeline.push(welc_ds8);
-        timeline.push(ds8[0]);
-        timeline.push(ds8[1]);
+    var welc_ds8 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 7</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds8);
+    timeline.push(ds8[0]);
+    timeline.push(ds8[1]);
 
-        var welc_ds9 = {
-            type: "html-keyboard-response",
-            stimulus: "<h1>Série de 7</h1>",
-            trial_duration: 1500,
-            choices: jsPsych.NO_KEYS,
-        };
-        timeline.push(welc_ds9);
-        timeline.push(ds9[0]);
-        timeline.push(ds9[1]);
+    var welc_ds9 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 7</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds9);
+    timeline.push(ds9[0]);
+    timeline.push(ds9[1]);
 
-        var welc_ds10 = {
-            type: "html-keyboard-response",
-            stimulus: "<h1>Série de 8</h1>",
-            trial_duration: 1500,
-            choices: jsPsych.NO_KEYS,
-        };
-        timeline.push(welc_ds10);
-        timeline.push(ds10[0]);
-        timeline.push(ds10[1]);
+    var welc_ds10 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 8</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds10);
+    timeline.push(ds10[0]);
+    timeline.push(ds10[1]);
 
-        var welc_ds11 = {
-            type: "html-keyboard-response",
-            stimulus: "<h1>Série de 8</h1>",
-            trial_duration: 1500,
-            choices: jsPsych.NO_KEYS,
-        };
-        timeline.push(welc_ds11);
-        timeline.push(ds11[0]);
-        timeline.push(ds11[1]);
+    var welc_ds11 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 8</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds11);
+    timeline.push(ds11[0]);
+    timeline.push(ds11[1]);
 
-        var welc_ds12 = {
-            type: "html-keyboard-response",
-            stimulus: "<h1>Série de 9</h1>",
-            trial_duration: 1500,
-            choices: jsPsych.NO_KEYS,
-        };
-        timeline.push(welc_ds12);
-        timeline.push(ds12[0]);
-        timeline.push(ds12[1]);
+    var welc_ds12 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 9</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds12);
+    timeline.push(ds12[0]);
+    timeline.push(ds12[1]);
 
-        var welc_ds13 = {
-            type: "html-keyboard-response",
-            stimulus: "<h1>Série de 9</h1>",
-            trial_duration: 1500,
-            choices: jsPsych.NO_KEYS,
-        };
-        timeline.push(welc_ds13);
-        timeline.push(ds13[0]);
-        timeline.push(ds13[1]);
+    var welc_ds13 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 9</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds13);
+    timeline.push(ds13[0]);
+    timeline.push(ds13[1]);
 
-        var welc_ds14 = {
-            type: "html-keyboard-response",
-            stimulus: "<h1>Série de 8</h1>",
-            trial_duration: 1500,
-            choices: jsPsych.NO_KEYS,
-        };
-        timeline.push(welc_ds14);
-        timeline.push(ds14[0]);
-        timeline.push(ds14[1]);
-        */
+    var welc_ds14 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 8</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds14);
+    timeline.push(ds14[0]);
+    timeline.push(ds14[1]);
 
 
-    // --CALCUL--
+    // --CALCUL 1--
 
     var welc_c1 = {
         type: "html-keyboard-response",
@@ -469,153 +470,931 @@
     timeline.push(welc_ds1);
     timeline.push(ds1[0]);
     timeline.push(ds1[1]);
-    /*
-        var welc_ds2 = {
-            type: "html-keyboard-response",
-            stimulus: "<h1>Série de 4</h1>",
-            trial_duration: 1500,
-            choices: jsPsych.NO_KEYS,
-        };
-        timeline.push(welc_ds2);
-        timeline.push(ds2[0]);
-        timeline.push(ds2[1]);
+
+    var welc_ds2 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 4</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds2);
+    timeline.push(ds2[0]);
+    timeline.push(ds2[1]);
 
 
-        var welc_ds3 = {
-            type: "html-keyboard-response",
-            stimulus: "<h1>Série de 5</h1>",
-            trial_duration: 1500,
-            choices: jsPsych.NO_KEYS,
-        };
-        timeline.push(welc_ds3);
-        timeline.push(ds3[0]);
-        timeline.push(ds3[1]);
+    var welc_ds3 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 5</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds3);
+    timeline.push(ds3[0]);
+    timeline.push(ds3[1]);
 
-            var welc_ds4 = {
-                type: "html-keyboard-response",
-                stimulus: "<h1>Série de 6</h1>",
-                trial_duration: 1500,
-                choices: jsPsych.NO_KEYS,
-            };
-            timeline.push(welc_ds4);
-            timeline.push(ds4[0]);
-            timeline.push(ds4[1]);
+    var welc_ds4 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 6</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds4);
+    timeline.push(ds4[0]);
+    timeline.push(ds4[1]);
 
-            var welc_ds5 = {
-                type: "html-keyboard-response",
-                stimulus: "<h1>Série de 7</h1>",
-                trial_duration: 1500,
-                choices: jsPsych.NO_KEYS,
-            };
-            timeline.push(welc_ds5);
-            timeline.push(ds5[0]);
-            timeline.push(ds5[1]);
+    var welc_ds5 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 7</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds5);
+    timeline.push(ds5[0]);
+    timeline.push(ds5[1]);
 
-            var welc_ds6 = {
-                type: "html-keyboard-response",
-                stimulus: "<h1>Série de 7</h1>",
-                trial_duration: 1500,
-                choices: jsPsych.NO_KEYS,
-            };
-            timeline.push(welc_ds6);
-            timeline.push(ds6[0]);
-            timeline.push(ds6[1]);
+    var welc_ds6 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 7</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds6);
+    timeline.push(ds6[0]);
+    timeline.push(ds6[1]);
 
-            var welc_ds7 = {
-                type: "html-keyboard-response",
-                stimulus: "<h1>Série de 6</h1>",
-                trial_duration: 1500,
-                choices: jsPsych.NO_KEYS,
-            };
-            timeline.push(welc_ds7);
-            timeline.push(ds7[0]);
-            timeline.push(ds7[1]);
+    var welc_ds7 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 6</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds7);
+    timeline.push(ds7[0]);
+    timeline.push(ds7[1]);
 
-            var welc_ds8 = {
-                type: "html-keyboard-response",
-                stimulus: "<h1>Série de 7</h1>",
-                trial_duration: 1500,
-                choices: jsPsych.NO_KEYS,
-            };
-            timeline.push(welc_ds8);
-            timeline.push(ds8[0]);
-            timeline.push(ds8[1]);
+    var welc_ds8 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 7</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds8);
+    timeline.push(ds8[0]);
+    timeline.push(ds8[1]);
 
-            var welc_ds9 = {
-                type: "html-keyboard-response",
-                stimulus: "<h1>Série de 7</h1>",
-                trial_duration: 1500,
-                choices: jsPsych.NO_KEYS,
-            };
-            timeline.push(welc_ds9);
-            timeline.push(ds9[0]);
-            timeline.push(ds9[1]);
+    var welc_ds9 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 7</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds9);
+    timeline.push(ds9[0]);
+    timeline.push(ds9[1]);
 
-            var welc_ds10 = {
-                type: "html-keyboard-response",
-                stimulus: "<h1>Série de 8</h1>",
-                trial_duration: 1500,
-                choices: jsPsych.NO_KEYS,
-            };
-            timeline.push(welc_ds10);
-            timeline.push(ds10[0]);
-            timeline.push(ds10[1]);
+    var welc_ds10 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 8</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds10);
+    timeline.push(ds10[0]);
+    timeline.push(ds10[1]);
 
-            var welc_ds11 = {
-                type: "html-keyboard-response",
-                stimulus: "<h1>Série de 8</h1>",
-                trial_duration: 1500,
-                choices: jsPsych.NO_KEYS,
-            };
-            timeline.push(welc_ds11);
-            timeline.push(ds11[0]);
-            timeline.push(ds11[1]);
+    var welc_ds11 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 8</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds11);
+    timeline.push(ds11[0]);
+    timeline.push(ds11[1]);
 
-            var welc_ds12 = {
-                type: "html-keyboard-response",
-                stimulus: "<h1>Série de 9</h1>",
-                trial_duration: 1500,
-                choices: jsPsych.NO_KEYS,
-            };
-            timeline.push(welc_ds12);
-            timeline.push(ds12[0]);
-            timeline.push(ds12[1]);
+    var welc_ds12 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 9</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds12);
+    timeline.push(ds12[0]);
+    timeline.push(ds12[1]);
 
-            var welc_ds13 = {
-                type: "html-keyboard-response",
-                stimulus: "<h1>Série de 9</h1>",
-                trial_duration: 1500,
-                choices: jsPsych.NO_KEYS,
-            };
-            timeline.push(welc_ds13);
-            timeline.push(ds13[0]);
-            timeline.push(ds13[1]);
+    var welc_ds13 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 9</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds13);
+    timeline.push(ds13[0]);
+    timeline.push(ds13[1]);
 
-            var welc_ds14 = {
-                type: "html-keyboard-response",
-                stimulus: "<h1>Série de 8</h1>",
-                trial_duration: 1500,
-                choices: jsPsych.NO_KEYS,
-            };
-            timeline.push(welc_ds14);
-            timeline.push(ds14[0]);
-            timeline.push(ds14[1]);
-        */
-
+    var welc_ds14 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 8</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds14);
+    timeline.push(ds14[0]);
+    timeline.push(ds14[1]);
 
 
-    // LA FIN
+    // --CALCUL 2--
+
+    var welc_c2 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de calcul mental</h1>",
+        trial_duration: 2000,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_c2);
+
+    var c_2_1 = calcul();
+    var calc_2_1 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_2_1[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_2_1[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_2_1";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_2.push(data.correct);
+            console.log(r_calc_2);
+        }
+    };
+    timeline.push(calc_2_1);
+
+    var c_2_2 = calcul();
+    var calc_2_2 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_2_2[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_2_2[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_2_2";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_2.push(data.correct);
+            console.log(r_calc_2);
+        }
+    };
+    timeline.push(calc_2_2);
+
+    var c_2_3 = calcul();
+    var calc_2_3 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_2_3[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_2_3[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_2_3";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_2.push(data.correct);
+            console.log(r_calc_2);
+        }
+    };
+    timeline.push(calc_2_3);
+
+    var c_2_4 = calcul();
+    var calc_2_4 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_2_4[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_2_4[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_2_4";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_2.push(data.correct);
+            console.log(r_calc_2);
+        }
+    };
+    timeline.push(calc_2_4);
+
+    var c_2_5 = calcul();
+    var calc_2_5 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_2_5[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_2_5[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_2_5";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_2.push(data.correct);
+            console.log(r_calc_2);
+        }
+    };
+    timeline.push(calc_2_5);
+
+    var c_2_6 = calcul();
+    var calc_2_6 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_2_6[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_2_6[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_2_6";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_2.push(data.correct);
+            console.log(r_calc_2);
+        }
+    };
+    timeline.push(calc_2_6);
+
+    var c_2_7 = calcul();
+    var calc_2_7 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_2_7[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_2_7[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_2_7";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_2.push(data.correct);
+            console.log(r_calc_2);
+        }
+    };
+    timeline.push(calc_2_7);
+
+    var c_2_8 = calcul();
+    var calc_2_8 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_2_8[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_2_8[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_2_8";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_2.push(data.correct);
+            console.log(r_calc_2);
+        }
+    };
+    timeline.push(calc_2_8);
+
+    var c_2_9 = calcul();
+    var calc_2_9 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_2_9[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_2_9[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_2_9";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_2.push(data.correct);
+            console.log(r_calc_2);
+        }
+    };
+    timeline.push(calc_2_9);
+
+    var c_2_10 = calcul();
+    var calc_2_10 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_2_10[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_2_10[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_2_10";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_2.push(data.correct);
+            console.log(r_calc_2);
+        }
+    };
+    timeline.push(calc_2_10);
+
+
+    // --GENERATION SERIES 3 DIGIT SPAN--
+    var ds1 = digitSpan(1, '3');
+    var ds2 = digitSpan(2, '3');
+    var ds3 = digitSpan(3, '3');
+    var ds4 = digitSpan(4, '3');
+    var ds5 = digitSpan(5, '3');
+    var ds6 = digitSpan(6, '3');
+    var ds7 = digitSpan(7, '3');
+    var ds8 = digitSpan(8, '3');
+    var ds9 = digitSpan(9, '3');
+    var ds10 = digitSpan(10, '3');
+    var ds11 = digitSpan(11, '3');
+    var ds12 = digitSpan(12, '3');
+    var ds13 = digitSpan(13, '3');
+    var ds14 = digitSpan(14, '3');
+
+    var welc_ds1 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 3</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds1);
+    timeline.push(ds1[0]);
+    timeline.push(ds1[1]);
+
+    var welc_ds2 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 4</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds2);
+    timeline.push(ds2[0]);
+    timeline.push(ds2[1]);
+
+
+    var welc_ds3 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 5</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds3);
+    timeline.push(ds3[0]);
+    timeline.push(ds3[1]);
+
+    var welc_ds4 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 6</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds4);
+    timeline.push(ds4[0]);
+    timeline.push(ds4[1]);
+
+    var welc_ds5 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 7</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds5);
+    timeline.push(ds5[0]);
+    timeline.push(ds5[1]);
+
+    var welc_ds6 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 7</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds6);
+    timeline.push(ds6[0]);
+    timeline.push(ds6[1]);
+
+    var welc_ds7 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 6</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds7);
+    timeline.push(ds7[0]);
+    timeline.push(ds7[1]);
+
+    var welc_ds8 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 7</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds8);
+    timeline.push(ds8[0]);
+    timeline.push(ds8[1]);
+
+    var welc_ds9 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 7</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds9);
+    timeline.push(ds9[0]);
+    timeline.push(ds9[1]);
+
+    var welc_ds10 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 8</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds10);
+    timeline.push(ds10[0]);
+    timeline.push(ds10[1]);
+
+    var welc_ds11 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 8</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds11);
+    timeline.push(ds11[0]);
+    timeline.push(ds11[1]);
+
+    var welc_ds12 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 9</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds12);
+    timeline.push(ds12[0]);
+    timeline.push(ds12[1]);
+
+    var welc_ds13 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 9</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds13);
+    timeline.push(ds13[0]);
+    timeline.push(ds13[1]);
+
+    var welc_ds14 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 8</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds14);
+    timeline.push(ds14[0]);
+    timeline.push(ds14[1]);
+
+
+    // --CALCUL 3--
+
+    var welc_c3 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de calcul mental</h1>",
+        trial_duration: 2000,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_c3);
+
+    var c_3_1 = calcul();
+    var calc_3_1 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_3_1[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_3_1[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_3_1";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_3.push(data.correct);
+            console.log(r_calc_3);
+        }
+    };
+    timeline.push(calc_3_1);
+
+    var c_3_2 = calcul();
+    var calc_3_2 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_3_2[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_3_2[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_3_2";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_3.push(data.correct);
+            console.log(r_calc_3);
+        }
+    };
+    timeline.push(calc_3_2);
+
+    var c_3_3 = calcul();
+    var calc_3_3 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_3_3[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_3_3[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_3_3";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_3.push(data.correct);
+            console.log(r_calc_3);
+        }
+    };
+    timeline.push(calc_3_3);
+
+    var c_3_4 = calcul();
+    var calc_3_4 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_3_4[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_3_4[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_3_4";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_3.push(data.correct);
+            console.log(r_calc_3);
+        }
+    };
+    timeline.push(calc_3_4);
+
+    var c_3_5 = calcul();
+    var calc_3_5 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_3_5[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_3_5[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_3_5";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_3.push(data.correct);
+            console.log(r_calc_3);
+        }
+    };
+    timeline.push(calc_3_5);
+
+    var c_3_6 = calcul();
+    var calc_3_6 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_3_6[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_3_6[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_3_6";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_3.push(data.correct);
+            console.log(r_calc_3);
+        }
+    };
+    timeline.push(calc_3_6);
+
+    var c_3_7 = calcul();
+    var calc_3_7 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_3_7[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_3_7[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_3_7";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_3.push(data.correct);
+            console.log(r_calc_3);
+        }
+    };
+    timeline.push(calc_3_7);
+
+    var c_3_8 = calcul();
+    var calc_3_8 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_3_8[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_3_8[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_3_8";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_3.push(data.correct);
+            console.log(r_calc_3);
+        }
+    };
+    timeline.push(calc_3_8);
+
+    var c_3_9 = calcul();
+    var calc_3_9 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_3_9[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_3_9[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_3_9";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_3.push(data.correct);
+            console.log(r_calc_3);
+        }
+    };
+    timeline.push(calc_3_9);
+
+    var c_3_10 = calcul();
+    var calc_3_10 = {
+        type: 'html-keyboard-response',
+        stimulus: '<h1>' + c_3_10[0] + '</h1>',
+        choices: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+        prompt: "<p>Réponse :</p>",
+        trial_duration: t_calc,
+        on_finish: function (data) {
+            data.key_press = jsPsych.pluginAPI.convertKeyCodeToKeyCharacter(data.key_press);
+            data.correct_response = c_3_10[4];
+            data.correct = data.key_press == data.correct_response;
+            data.test_part = "calc_3_10";
+            console.log(data.test_part);
+            console.log(data.correct);
+            console.log(data.key_press);
+            console.log(data.correct_response);
+            r_calc_3.push(data.correct);
+            console.log(r_calc_3);
+        }
+    };
+    timeline.push(calc_3_10);
+
+    // --GENERATION SERIES 4 DIGIT SPAN--
+    var ds1 = digitSpan(1, '4');
+    var ds2 = digitSpan(2, '4');
+    var ds3 = digitSpan(3, '4');
+    var ds4 = digitSpan(4, '4');
+    var ds5 = digitSpan(5, '4');
+    var ds6 = digitSpan(6, '4');
+    var ds7 = digitSpan(7, '4');
+    var ds8 = digitSpan(8, '4');
+    var ds9 = digitSpan(9, '4');
+    var ds10 = digitSpan(10, '4');
+    var ds11 = digitSpan(11, '4');
+    var ds12 = digitSpan(12, '4');
+    var ds13 = digitSpan(13, '4');
+    var ds14 = digitSpan(14, '4');
+
+    var welc_ds1 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 3</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds1);
+    timeline.push(ds1[0]);
+    timeline.push(ds1[1]);
+
+    var welc_ds2 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 4</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds2);
+    timeline.push(ds2[0]);
+    timeline.push(ds2[1]);
+
+
+    var welc_ds3 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 5</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds3);
+    timeline.push(ds3[0]);
+    timeline.push(ds3[1]);
+
+    var welc_ds4 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 6</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds4);
+    timeline.push(ds4[0]);
+    timeline.push(ds4[1]);
+
+    var welc_ds5 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 7</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds5);
+    timeline.push(ds5[0]);
+    timeline.push(ds5[1]);
+
+    var welc_ds6 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 7</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds6);
+    timeline.push(ds6[0]);
+    timeline.push(ds6[1]);
+
+    var welc_ds7 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 6</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds7);
+    timeline.push(ds7[0]);
+    timeline.push(ds7[1]);
+
+    var welc_ds8 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 7</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds8);
+    timeline.push(ds8[0]);
+    timeline.push(ds8[1]);
+
+    var welc_ds9 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 7</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds9);
+    timeline.push(ds9[0]);
+    timeline.push(ds9[1]);
+
+    var welc_ds10 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 8</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds10);
+    timeline.push(ds10[0]);
+    timeline.push(ds10[1]);
+
+    var welc_ds11 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 8</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds11);
+    timeline.push(ds11[0]);
+    timeline.push(ds11[1]);
+
+    var welc_ds12 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 9</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds12);
+    timeline.push(ds12[0]);
+    timeline.push(ds12[1]);
+
+    var welc_ds13 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 9</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds13);
+    timeline.push(ds13[0]);
+    timeline.push(ds13[1]);
+
+    var welc_ds14 = {
+        type: "html-keyboard-response",
+        stimulus: "<h1>Série de 8</h1>",
+        trial_duration: 1500,
+        choices: jsPsych.NO_KEYS,
+    };
+    timeline.push(welc_ds14);
+    timeline.push(ds14[0]);
+    timeline.push(ds14[1]);
+
+
+    // --LA FIN--
+
     jsPsych.init({
         timeline: timeline,
         on_finish: function () {
             var data = jsPsych.data.get().filter({stimulus: 'Réponse :'}).csv();
             var dataJSON = jsPsych.data.get().filter({stimulus: 'Réponse :'}).json();
-            console.log(dataJSON);
-            jsPsych.data.displayData('csv');
+            //console.log(dataJSON);
+            //jsPsych.data.displayData('csv');
             var form = $("<form action='write_data.php' method='post'>" +
                 "<input type='hidden' name='data' value='" + data + "'>" +
                 "<input type='hidden' name='dataJSON' value='" + dataJSON + "'>" +
-                "<input type='hidden' name='dataCalc' value='" + toString(r_calc_1) + "'>" +
+                "<input type='hidden' name='dataCalc_1' value='" + r_calc_1 + "'>" +
+                "<input type='hidden' name='dataCalc_2' value='" + r_calc_2 + "'>" +
+                "<input type='hidden' name='dataCalc_3' value='" + r_calc_3 + "'>" +
                 "</form>");
             $('body').append(form);
             form.submit();

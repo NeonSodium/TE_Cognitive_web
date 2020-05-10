@@ -21,9 +21,6 @@
                         <button class="button">Digit</button>
                     </a>
                 </div>
-                <div class="column">
-                    <button class="button" disabled>Calcul</button>
-                </div>
             </div>
         </div>
     </div>

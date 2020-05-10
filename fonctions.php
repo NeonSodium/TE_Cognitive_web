@@ -36,3 +36,14 @@ function insertSujet($bdd, $code)
     $req->closeCursor();
     return $LAST_ID;
 }
+
+function insertCalcul($bdd, $id, $part, $cid, $correct)
+{
+    $req = $bdd->prepare("INSERT INTO calcul (id_sujet, calc_part, calc_id, calc_correct) VALUES (:id, :part, :cid, :correct)");
+    $req->bindParam(":id", $id);
+    $req->bindParam(":part", $part);
+    $req->bindParam(":cid", $cid);
+    $req->bindParam(":correct", $correct);
+    $req->execute();
+    $req->closeCursor();
+}

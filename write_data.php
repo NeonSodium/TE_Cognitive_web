@@ -20,11 +20,60 @@ insertRaw($bdd, $_POST['dataJSON']);
 
 $json = $_POST['dataJSON'];
 $data = json_decode($json);
-
-$calc = $_POST['dataCalc'];
-
+$calc_1 = $_POST['dataCalc_1'];
+$calc_2 = $_POST['dataCalc_2'];
+$calc_3 = $_POST['dataCalc_3'];
 #print_r($data);
-print_r($calc);
+
+# --CALCUL--
+
+# Calc 1
+$dataCalcRaw_1 = explode(",", $calc_1);
+$dataCalc_1 = [];
+for ($i = 0; $i < count($dataCalcRaw_1); $i++) {
+    if ($dataCalcRaw_1[$i] == 'true') {
+        array_push($dataCalc_1, 1);
+    } else {
+        array_push($dataCalc_1, 0);
+    }
+}
+#print_r($dataCalc_1);
+for ($i = 0; $i < count($dataCalc_1); $i++) {
+    insertCalcul($bdd, $sujet, 1, $i+1, $dataCalc_1[$i]);
+}
+
+# Calc 2
+$dataCalcRaw_2 = explode(",", $calc_2);
+$dataCalc_2 = [];
+for ($i = 0; $i < count($dataCalcRaw_2); $i++) {
+    if ($dataCalcRaw_2[$i] == 'true') {
+        array_push($dataCalc_2, 1);
+    } else {
+        array_push($dataCalc_2, 0);
+    }
+}
+#print_r($dataCalc_2);
+for ($i = 0; $i < count($dataCalc_2); $i++) {
+    insertCalcul($bdd, $sujet, 2, $i+1, $dataCalc_2[$i]);
+}
+
+# Calc 3
+$dataCalcRaw_3 = explode(",", $calc_3);
+$dataCalc_3 = [];
+for ($i = 0; $i < count($dataCalcRaw_3); $i++) {
+    if ($dataCalcRaw_3[$i] == 'true') {
+        array_push($dataCalc_3, 1);
+    } else {
+        array_push($dataCalc_3, 0);
+    }
+}
+#print_r($dataCalc_3);
+for ($i = 0; $i < count($dataCalc_3); $i++) {
+    insertCalcul($bdd, $sujet, 3, $i+1, $dataCalc_3[$i]);
+}
+
+
+# --TEST--
 
 for ($i = 0; $i < count($data); $i++) {
     #echo($data[$i]->{'test_part'});
